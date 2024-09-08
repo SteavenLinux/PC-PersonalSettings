@@ -9,7 +9,7 @@ vt = 1
 # on the greeter. A graphical greeter may for example require the user to be
 # in the `video` group.
 user = "omarhanykasban"
-command = "Hyprland"
+command = "startx"
 
 # Optional: Uncomment and set if you have specific session commands
 # command = "agreety --cmd /bin/zsh"

@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p ~/.config/systemd/user/
 #sudo cp -Rv var/* /var
 #sudo cp -Rv usr/* /usr
 sudo cp -Rv etc/* /etc
