@@ -18,3 +18,7 @@ This is my pc only settings
 
 ## greetd
 - autostart hyprland on tty1
+
+
+## modprobe.d
+- Vifio GPU ids
