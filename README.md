@@ -2,7 +2,6 @@
 This is my pc only settings
 
 ## udev rules
-- Disable nintdido switch for android controllers to make it use xbox mode
 - Fix headset on connect
 - kvmfr rules
 
