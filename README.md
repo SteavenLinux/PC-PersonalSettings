@@ -2,7 +2,6 @@
 This is my pc only settings
 
 ## udev rules
-- Disable nintdido switch for android controllers to make it use xbox mode
 - Fix headset on connect
 - kvmfr rules
 
@@ -11,7 +10,8 @@ This is my pc only settings
 
 ## xorg
 - custom display config
-- custom nvidia config
+- custom nvidia gpu config
+- custom amd gpu config
 
 ## pam.d
 - enable kwallet
@@ -22,3 +22,12 @@ This is my pc only settings
 
 ## modprobe.d
 - Vifio GPU ids
+- Looking glass
+- amdgpu config
+- blacklist nvidia
+- blacklist k10temp
+- v412loopback
+
+## modules-load.d
+- Auto start of my pc Drivers Modules
+- Auto start of looking glass
