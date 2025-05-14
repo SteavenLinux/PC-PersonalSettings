@@ -1,0 +1,1 @@
+/home/flatpak /var/lib/flatpak none bind 0 0
