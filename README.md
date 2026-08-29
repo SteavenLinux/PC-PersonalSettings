@@ -2,31 +2,20 @@
 This is my pc only settings
 
 ## udev rules
-- Fix headset on connect
+- Fix redragon h848 headset
 - kvmfr rules
-
-## systemd
-- Headset fix script for system and user
 
 ## xorg
 - custom display config
-- custom nvidia gpu config
 - custom amd gpu config
 
-## pam.d
-- enable kwallet
-
 ## greetd
-- autostart hyprland on tty1
-
+- autostart sway  on tty1
 
 ## modprobe.d
-- Vifio GPU ids
-- Looking glass
-- amdgpu config
-- blacklist nvidia
-- blacklist k10temp
-- v412loopback
+- Disabled Usb auto suspend
+- Disabled rtw8822bu
+- RTL88x2BU usb 3 mode
 
 ## modules-load.d
 - Auto start of my pc Drivers Modules

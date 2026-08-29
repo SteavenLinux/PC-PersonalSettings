@@ -1,8 +1,29 @@
-#!/bin/bash
-mkdir -p ~/.config/systemd/user/
-#sudo cp -Rv var/* /var
-#sudo cp -Rv usr/* /usr
-sudo cp -Rv etc/* /etc
-cp -Rv $PWD/home/user/.config/systemd/user/headset.service ~/.config/systemd/user/headset.service
-sudo systemctl enable headset.service --now
-systemctl --user enable headset.service --now
+#!/usr/bin/env bash
+
+source /etc/os-release
+
+case "$ID" in
+    steavenlinux|cachyos|arch)
+        SOURCE="SteavenLinux"
+        ;;
+    linuxmint)
+        SOURCE="LinuxMint"
+        ;;
+    fedora)
+        SOURCE="Fedora"
+        ;;
+    *)
+        echo "Unsupported distribution: $PRETTY_NAME"
+        exit 1
+        ;;
+esac
+
+if [[ ! -d "$SOURCE/etc" ]]; then
+    echo "Error: '$SOURCE/etc' does not exist."
+    exit 1
+fi
+
+echo "Detected: $PRETTY_NAME"
+echo "Using source: $SOURCE"
+
+sudo cp -Rv "$SOURCE/etc"/. /etc
