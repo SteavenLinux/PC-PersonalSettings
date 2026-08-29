@@ -1,5 +1,5 @@
 # PC-PersonalSettings
-This is my pc only settings
+This is my pc settings
 
 ## udev rules
 - Fix redragon h848 headset
